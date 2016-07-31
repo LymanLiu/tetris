@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块~~</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <link rel="stylesheet" type="text/css" href="css/Game.css">
+</head>
+<body>
+<audio src="music/tetris.mp3" loop="loop" id="audio"></audio>
+<div class="wrapper pr">
+    <svg id="musicBtn" width="20" height="40" viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill="#FFF">
+    <g transform="matrix(1 0 0 -1 0 80)">
+        <rect width="5" height="10" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="0s"
+                 values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20" calcMode="linear"
+                 repeatCount="indefinite" />
+        </rect>
+        <rect x="15" width="5" height="40" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="0s"
+                 values="80;55;33;5;75;23;73;33;12;14;60;80" calcMode="linear"
+                 repeatCount="indefinite" />
+        </rect>
+        <rect x="30" width="5" height="25" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="0s"
+                 values="50;34;78;23;56;23;34;76;80;54;21;50" calcMode="linear"
+                 repeatCount="indefinite" />
+        </rect>
+        <rect x="45" width="5" height="15" rx="3">
+            <animate attributeName="height"
+                 begin="0s" dur="0s"
+                 values="30;45;13;80;56;72;45;76;34;23;67;30" calcMode="linear"
+                 repeatCount="indefinite" />
+        </rect>
+    </g>
+</svg>
+</div>
+
+<canvas id="myCanvas" width="320" height="520"></canvas>
+<section id="Contanier" class="Contanier">
+    <div id="redayGoBox" class="">
+        <div class="title-text"><img src="images/text-redaygo.png" > </div>
+        <p id="progress" style="font-size: 1.5rem;" class="gotScore">0</p>
+        <div id="startBtn" class="btn-bg start-btn none"></div>
+    </div>
+    <div id="gameOver" class="none">
+        <div class="title-text"><img src="images/text-gameover.png" > </div>
+        <p id="gotScore" class="gotScore">0</p>
+        <ul class="double-btn">
+            <li>
+                <div id="resetBtn" class="btn-bg reset-btn"></div>
+            </li>
+            <li>
+                <div id="addScore" class="btn-bg addScore-btn"></div>
+            </li>
+            <li>
+                <div id="goseeBtn" class="btn-bg gosee-btn"></div>
+            </li>
+        </ul>
+    </div>
+    <div id="rankingList" class="none">
+        <div class="rankingList-title"><img src="images/text-fybang.png" > </div>
+        <ul class="rankingList-box">
+            <li>
+                <span class="title"></span>
+                <span class="title"></span>
+                <span class="title"></span>
+            </li>
+        </ul>
+        <ul id="rankingListBox" class="rankingList-box rankingList-box2">
+            
+        </ul>
+        <div id="gobackBtn" class="btn-bg goback-btn"></div>
+    </div>
+</section>
+<script type="text/javascript" src="js/fontRem.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/Game.js"></script>
+<script type="text/javascript" src="js/Block.js"></script>
+<script type="text/javascript" src="js/Blockunit.js"></script>
+<script type="text/javascript" src="js/Map.js"></script>
+
+<script type="text/javascript">
+	var g = new Game();
+</script>
+</body>
+</html>

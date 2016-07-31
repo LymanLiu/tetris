@@ -1,0 +1,166 @@
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	overflow: hidden;
+	max-width: 16rem;
+	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+canvas {
+	background: url(../images/e_block-bg.jpg);
+	background-size: 100%;
+}
+.none {
+	display: none;
+}
+.pr{
+	position: relative;
+}
+.Contanier {
+	position: fixed;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 16rem;
+	background: rgba(8, 33, 84, 0.8);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.title-text {
+	width: 70%;
+	padding-top: 6rem;
+	margin: 0 auto;
+}
+.btn-bg {
+	margin: 0 auto;
+	width: 4.5rem;
+	height: 3.7rem;
+	background: url(../images/btn-bg.png) no-repeat center;
+	background-size: 100%;
+}
+.btn-bg:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../images/ico-start.png) no-repeat center;
+	background-size: 38.2%;
+}
+.start-btn {
+	margin: 3rem auto;
+}
+.reset-btn:before {
+	background-image: url(../images/ico-reset.png);
+}
+.gosee-btn:before {
+	background-image: url(../images/text-fybang.png);
+	background-size: 3rem;
+}
+.goback-btn:before{
+	background-image: url(../images/text-goback.png);
+    background-size: 2.2rem;
+}
+.goback-btn{
+	position: fixed;
+	left: 50%;
+	bottom: 2rem;
+	-wekit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.addScore-btn:before{
+	background-image: url(../images/text-addSocre.png);
+}
+.gotScore{
+	text-align: center;
+	font-size: 2rem;
+	line-height: 5rem;
+	height: 5rem;
+	width: 5rem;
+	margin: 0 auto;
+	margin-top: 1rem;
+	border-radius: 50%;
+	background: rgba(255,255,255,.1);
+	color: #fff;
+	font-family: Arial;
+}
+.error{
+	line-height: 1.3rem;
+    box-sizing: border-box;
+    padding-top: 1.2rem;
+    color: #ffbfbf;
+}
+
+.double-btn {
+	overflow: hidden;
+	padding: 1rem .5rem;
+	display: -webkit-flex;
+	display: flex;
+
+}
+.double-btn>li {
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	float: left;
+	width: 100%;
+}
+.rankingList-title {
+	width: 4.5rem;
+	padding-top: 2rem;
+	margin: 0 auto;
+}
+.rankingList-box {
+	padding: .5rem .5rem 0;
+}
+.rankingList-box2{
+	padding-top: 0;
+	padding-bottom: .5rem;
+	height: 16rem;
+	overflow: auto;
+}
+.rankingList-box li {
+	overflow: hidden;
+	line-height: 2rem;
+	font: .8rem/2rem Arial;
+	color: #fff;
+	text-align: center;
+}
+.rankingList-box li span {
+	float: left;
+	width: 25%;
+	height: 2rem;
+}
+.rankingList-box li span.title {
+	background: url(../images/text-fenshu.png) no-repeat center;
+	background-size: 2rem;
+}
+.rankingList-box li span.title:first-child {
+	background-image: url(../images/text-mingci.png);
+}
+.rankingList-box li span.title:last-child {
+	background-image: url(../images/text-time.png);
+	background-size: 4.5rem;
+}
+.rankingList-box li span:first-child {
+	font-size: .9rem;
+}
+.rankingList-box li span:last-child{
+	width: 50%;
+	font-size: .65rem;
+}
+
+#musicBtn{ 
+	position: absolute;
+	right: .5rem;
+	top: .5rem;
+	z-index: 9999;
+	
+}
